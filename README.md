@@ -16,4 +16,4 @@ Then comes the code part, I've prepared some primary codes for you to get start,
 (2)
 
 
-![image]()
+![image](https://github.com/Minghaoox/GraduationProj/blob/DFO/DFO.gif)
