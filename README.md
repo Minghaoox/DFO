@@ -1,4 +1,4 @@
-# GraduationProj
+# DFO Tutorial
 This is a repository for undergraduate students' graduation project of 2022
 
 I'll make some notes here while I'm learning DFO(Dispersive Flies Optimisation), so you can follow my notes to go on pre-study on this project.
