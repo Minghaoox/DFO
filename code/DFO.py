@@ -1,51 +1,14 @@
-"""
-Dispersive Flies Optimisation
-
-Copyright (C) 2014 Mohammad Majid al-Rifaie
-
-This is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License.
-
-For any query contact:
-m.alrifaie@gre.ac.uk
-
-School of Computing & Mathematical Sciences
-University of Greenwich, Old Royal Naval College,
-Park Row, London SE10 9LS, U.K.
-
-Reference to origianl paper:
-Mohammad Majid al-Rifaie (2014), Dispersive Flies Optimisation, Proceedings of the 2014 Federated Conference on Computer Science and Information Systems, 535--544. IEEE.
-
-	@inproceedings{FedCSIS_2014,
-		author={Mohammad Majid al-Rifaie},
-		pages={535--544},
-		title={Dispersive Flies Optimisation},
-		booktitle={Proceedings of the 2014 Federated Conference on Computer Science and Information Systems},
-		year={2014},
-		editor={M. Ganzha, L. Maciaszek, M. Paprzycki},
-		publisher={IEEE}
-	}
-"""
-
-# If you do decide to run this to check the time ran, I'd advise you watch a 10-20 min video of something to pass time
-
 import numpy as np
 from time import perf_counter
 from math import floor, log10
 
 count = 0
 
-
-def scientific(x, n):  # Taken from https://github.com/corriander/python-sigfig/blob/dev/sigfig/sigfig.py
-    # """Represent a float in scientific notation.
-    # This function is merely a wrapper around the 'e' type flag in the
-    # formatting specification.
-    # """
+def scientific(x, n):
     n = int(n)
     x = float(x)
-
     if n < 1:
         raise ValueError("1+ significant digits required.")
-
     return ''.join(('{:.', str(n - 1), 'e}')).format(x)
 
 
